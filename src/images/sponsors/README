@@ -1,0 +1,24 @@
+Sponsor logos go here.
+
+Try to keep the size down to about 20K if possible, by resizing and using tools like optipng.
+Also, try to keep the image resolution close to that used in the sponsors page.
+
+Width should be scaled relative to height to keep the aspect ratio.
+Heights should ideally be:
+Headliner: 180
+Gold: 160
+Silver: 150
+Bronze: 140
+Other: 130
+Grant: 130
+
+However, the maximum width should be 355 in order to avoid running into problems with narrow phone screens,
+and to keep logos in at least two columns even for those that are very horizontally hungry.
+
+Examples:
+Resize with imagemagick for a silver sponsor (height 150):
+convert -resize 300X150  source.png dest.png
+
+Note: imagemagick can also convert between formats, so you might want to grab an SVG and convert it in some cases.
+      Remember to use the -resize <widthxheight> argument in this case, and check you didn't deform it afterwards.
+      One way to check the relative dimensions is to run (to PNG) without size to get the ratio of width to height.

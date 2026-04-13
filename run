@@ -1,0 +1,51 @@
+#! /usr/bin/env bash
+# This file should install depencies on first run and just run jekyll on future invocations
+set -e
+
+# Ensure we're not installing gems system-wide
+SCRIPT_DIR=$(dirname ${0})
+export GEM_HOME="${SCRIPT_DIR}/.gem"
+export PATH="${SCRIPT_DIR}/.gem/bin:${PATH}"
+
+if ! bundle exec jekyll -v >/dev/null; then
+  # Install the version of bundler specified in the lockfile to work around a bug
+  # See: https://bundler.io/blog/2019/05/14/solutions-for-cant-find-gem-bundler-with-executable-bundle.html
+  gem install bundler -v "$(grep -A 1 "BUNDLED WITH" Gemfile.lock | tail -n 1)"
+
+  # Install dependencies
+  bundle install
+
+  # Run the initial build of the software
+  bundle exec jekyll build
+fi
+
+# Define default option values.
+PORT=4020
+FUTURE="--future"
+LIVERELOAD="--livereload"
+
+# Parse command line for option value over-rides.
+rem_args=()
+while [ "$#" != '0' ]; do
+  case "$1" in
+    "--port")
+      shift
+      PORT="$1"
+    ;;
+
+    "--nofuture")
+      FUTURE=
+    ;;
+
+    "--nolivereload")
+      LIVERELOAD=    
+    ;;
+
+    *)
+      rem_args+=("$1")
+    ;;
+  esac
+  shift
+done
+
+bundle exec jekyll serve --port "$PORT" "$FUTURE" "$LIVERELOAD" "${rem_args[@]}"

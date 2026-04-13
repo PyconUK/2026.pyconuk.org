@@ -1,0 +1,61 @@
+<aside>
+  <div id="aside_inner">
+    <!--
+      This is an entirely frivolous thing: we randomly select a snake for
+      the user to see.  A gratuitous use of JavaScript!
+
+      But what if the user doesn't have JavaScript enabled?  Select a random
+      snake for the fallback, too - it only gets reselected when we rebuild
+      with Jekyll, but means the snake will continue to rotate.
+    -->
+    {% assign snake_colours = "red|blue|yellow|green|orange" | split: "|" %}
+
+    <div id="header_snake">
+      <img alt="A pycon snake logo" src="/images/{{ snake_colours | sample: 1 }}_snake.png">
+    </div>
+
+    <script>
+      const colours = ["red", "blue", "yellow", "green", "orange"];
+
+      // https://stackoverflow.com/a/9071606/1558022
+      function choose(choices) {
+        var index = Math.floor(Math.random() * choices.length);
+        return choices[index];
+      }
+
+      const snakeColour = choose(colours);
+
+      if (Math.random() > 0.5) {
+        var imageHTML = "<img alt=\"A pycon snake logo\" src=\"/images/" + snakeColour + "_snake.png\">";
+      } else {
+        var imageHTML = "<img alt=\"A pycon snake logo\" class=\"flip-horizontally\" src=\"/images/" + snakeColour + "_snake.png\">";
+      }
+
+      document.getElementById("header_snake").innerHTML = imageHTML;
+    </script>
+
+    <h1>{{ site.title | escape }}</h1>
+
+    <!--<p>{{ site.con_location }}<br/>{{ site.con_start }} to {{ site.con_finish }}</p>-->
+    <p><strong>Canceled for 2026</strong></p>
+
+    <div id="aside_links">
+      <ul class="dot_list">
+        <li><a href="/">Home</a></li>
+        {% if site.show_sponsors == true %}<li><a href="/sponsors/">Sponsors</a></li>{% else %}<!-- Did you know: Slange is Danish for snake? -->{% endif %}
+        {% if site.cfp_closed %}<!-- Sssibiliant sssnakes ssshould ssseek to ssspeak next year! -->{% elsif site.cfp_open == true %}<li><a href="/call-for-proposals/">Call for proposals</a></li>{% else %}<!-- snakes_disappear_when_tickets_are_here -->{% endif %}
+        {% if site.show_django_girls == true %}<li><a href="/django-girls/">Django Girls</a></li>{% else %}<!-- Maybe a link to something cool will appear here soon? -->{% endif %}
+        <!--<li><a href="/code-of-conduct/">Code of Conduct</a></li>
+        <li><a href="/inclusion/">Inclusion</a></li>
+        <li><a href="/schedule/">Schedule</a></li>
+        <li><a href="/sprints/">Sprints</a></li>
+        <li><a href="/venue/">Venue</a></li>
+        <li><a href="/local-info/">Local Info</a></li>
+        <li><a href="/faq/">FAQ</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="/health/">Public Health Policy</a></li>-->
+        <li><a href="/contact/">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+</aside>

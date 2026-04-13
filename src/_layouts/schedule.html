@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  {% include head.html %}
+
+  <body>
+    {% include header.html %}
+
+    <main>
+      <div id="main_inner">
+        {% if page.title %}
+        <h2>{{ page.title }}</h2>
+        {% endif %}
+
+        {{ content }}
+      </div>
+
+{% if site.schedule_ready == true %}
+<pretalx-schedule
+  id='pretalx-schedule'
+  event-url="https://pretalx.com/pyconuk-{{ site.con_year }}/" locale="en"
+  style="--pretalx-clr-primary: #3aa57c; display: block; margin: 0 auto;">
+</pretalx-schedule>
+
+{% endif %}
+
+    </main>
+    {% include footer.html %}
+  </body>
+</html>

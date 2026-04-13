@@ -1,0 +1,16 @@
+To make a post, create a new file with the following content:
+
+
+---
+layout: post
+author: The PyConUK team
+title: <The title of this awesome post>
+---
+
+{% assign links = site.data.links.md.short %}
+
+<Say what you want to say here.>
+
+<You can use links as {{links.linkedin}} or similar.>
+
+<You can also {%include pyconuk_email.md%} or {%include sponsorship_email.md%}, for example.>

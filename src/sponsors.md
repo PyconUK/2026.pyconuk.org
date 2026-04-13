@@ -1,0 +1,122 @@
+---
+layout: default
+title: Sponsors
+---
+
+<p>The conference wouldn't happen without the generous support of our sponsors:</p>
+
+<!--
+<div class="box box_blue">
+  <h3>Headline sponsor</h3>
+  <p><a href="#"><img height="180" width="180" src="/images/sponsors/snakeholder.png" alt="Logo of Snakeholder, headline sponsor of PyconUK {{ site.con_year }}" title="Snakeholder"></a></p>
+</div>
+-->
+
+<div class="box box_yellow box_sponsor_group">
+  <h3>Gold sponsors</h3>
+  <div class="box box_sponsor" style="width: 355px">
+    <a href="https://www.bennett.ox.ac.uk/"><img height="160" width="355" src="/images/sponsors/Bennett_Institute.svg" alt="Logo of Bennett Institute, a sponsor of PyconUK {{ site.con_year }}" title="Bennett Institute"></a>
+    <p>
+      The Bennett Institute for Applied Data Science, at the University of Oxford are a multidisciplinary team of software developers, clinicians and academic researchers, who produce academic <a href="https://www.bennett.ox.ac.uk/papers/">research papers</a>, but we also use the same skills to build live, interactive, data-driven tools and services such as <a href="https://openprescribing.net/">OpenPrescribing</a>, <a href="https://www.bennett.ox.ac.uk/trialstracker/">TrialsTracker</a> and <a href="https://www.opensafely.org/">OpenSAFELY</a>. We produce real, practical policy insights on how data can be used to improve lives.
+    </p>
+  </div>
+
+  <div class="box box_sponsor" style="width: 360px">
+    <!-- A bit shorter than gold sponsors are intended to be, because the logo is otherwise too wide on narrow screens (e.g. some phones) -->
+    <a href="https://TechAtBloomberg.com/python"><img height="145" width="360" src="/images/sponsors/bloomberg.png" alt="Logo of Bloomberg, a sponsor of PyconUK {{ site.con_year }}" title="Bloomberg"></a>
+    <p>
+      Bloomberg is building the world's most trusted information network for financial professionals. Our 9,000+ engineers are dedicated to advancing and building new systems for the Bloomberg Terminal to solve complex, real-world problems. We employ an active community of 4,000+ Python developers who have their hands in everything from financial analytics and data science to contributing to open source technologies like Project Jupyter. Bloomberg is proud to be a Visionary Sponsor of the Python Software Foundation and sponsor of many Python community events around the world.
+    </p>
+  </div>
+
+  <div class="box box_sponsor" style="width: 360px">
+    <!-- A lot shorter than gold sponsors are intended to be, because the logo is otherwise too wide on narrow screens (e.g. some phones) -->
+    <a href="https://flok.health/"><img height="66" width="360" src="/images/sponsors/flok-health.svg" alt="Logo of Flok Health, a sponsor of PyconUK {{ site.con_year }}" title="Flok Health"></a>
+    <p>
+      Flok is a Cambridge-based digital health company. We're a team of engineers and clinicians building a scalable care delivery system for physiotherapy patients across the UK, and Python is a key part of our stack. <a href="https://www.bbc.co.uk/news/articles/cy4y9xm1eejo">Read more on the BBC News website</a> about Flok's recent impact in Cambridgeshire & Peterborough.
+    </p>
+  </div>
+
+  <div class="box box_sponsor" style="width: 355px">
+    <!-- A lot shorter than gold sponsors are intended to be, because the logo is otherwise too wide on narrow screens (e.g. some phones) -->
+    <a href="https://www.snapshot.reviews/"><img height="145" width="355" src="/images/sponsors/snapshot-ai.png" alt="Logo of Snapshot AI, a sponsor of PyconUK {{ site.con_year }}" title="Snapshot AI"></a>
+    <p>
+      Snapshot AI translates engineering work into real, actionable insights using recursive RAG, transformers, by ingesting data from GitHub, Jira, Bitbucket and more. It understands what your engineering team does, and advocates for developers.
+    </p>
+  </div>
+</div>
+
+<div class="box box_silver box_sponsor_group">
+  <h3>Silver sponsors</h3>
+
+  <div class="box box_sponsor" style="width: 360px">
+    <!-- A bit shorter than silver sponsors are intended to be, because the logo is otherwise too wide on narrow screens (e.g. some phones) -->
+    <a href="https://www.jetbrains.com/"><img height="77" width="360" src="/images/sponsors/jetbrains.svg" alt="Logo of Jetbrains, a sponsor of PyCon UK {{ site.con_year }}" title="Jetbrains"></a>
+    <p>
+      JetBrains is a global software vendor dedicated to building intelligent, productivity-enhancing tools that help developers, data professionals, and teams do their best work. Our flagship Python IDE, PyCharm, is trusted by over 1 million Python developers worldwide. Designed for web developers, data scientists, and AI/ML engineers, PyCharm combines a powerful feature set with a modern AI-enhanced development experience.
+    </p>
+  </div>
+
+  <div class="box box_sponsor" style="width: 355px">
+    <!-- A bit shorter than silver sponsors are intended to be, because the logo is otherwise too wide on narrow screens (e.g. some phones) -->
+    <a href="https://pulse.internetsociety.org/"><img height="129" width="355" src="/images/sponsors/internet-society-pulse.png" alt="Logo of Internet Society Pulse, a sponsor of PyCon UK {{ site.con_year }}" title="Internet Society Pulse"></a>
+    <p>
+      Internet Society Pulse offers data from trusted sources to help anyone who cares about the Internet to understand the forces that shape it. It is a free, public resource built using Python so we wanted to support the Python community in return.
+    </p>
+  </div>
+</div>
+
+<!--
+<div class="box box_bronze">
+  <h3>Bronze sponsors</h3>
+  <a href="#"><img height="140" width="140" src="/images/sponsors/snakeholder.png" alt="Logo of Snakeholder, a sponsor of PyCon UK {{ site.con_year }}" title="Snakeholder"></a>
+</div>
+-->
+
+<div class="box box_red box_sponsor_group">
+  <h3>Other Supporters</h3>
+  <div class="box box_sponsor" style="width: 220px">
+    <a href="https://www.chronicinsanity.co.uk/"><img height="130" width="130" src="/images/sponsors/Chronic_Insanity.png" alt="Logo of Chronic Insanity, a supporter of PyCon UK {{ site.con_year }}" title="Chronic Insanity"></a>
+    <p>
+      Chronic Insanity is a Nottingham-based theatre company that creates and facilitates live events in a variety of traditional, found, and digital spaces.
+    </p>
+  </div>
+
+  <div class="box box_sponsor" style="width: 355px">
+    <a href="https://burendo.com/"><img height="88" width="355" src="/images/sponsors/burendo.png" alt="Logo of Burendo, a supporter of PyCon UK {{ site.con_year }}" title="Burendo"></a>
+    <p>
+      We are an award-winning consultancy delivering stand-out products and services through technology.
+    </p>
+  </div>
+
+  <div class="box box_sponsor" style="width: 355px">
+    <a href="https://growthinvest.com/"><img height="129" width="355" src="/images/sponsors/growth-invest.png" alt="Logo of Growth Invest, a supporter of PyCon UK {{ site.con_year }}" title="Growth Invest"></a>
+    <p>
+      GrowthInvest make tax-efficient and private investments more accessible to wealth managers, financial advisers, and their high value clients.
+    </p>
+  </div>
+</div>
+
+<div class="box box_gray box_sponsor_group">
+  <h3>Grants</h3>
+  <div class="box box_sponsor" style="width: 357px">
+    <a href="https://www.europython-society.org/"><img height="130" width="357" src="/images/sponsors/EPS.png" alt="Logo of EuroPython Society, a supporter of PyCon UK {{ site.con_year }}" title="EuroPython Society"></a>
+    <p>
+      The EuroPython Society (EPS) is a Swedish non-profit organization dedicated to supporting Python communities across Europe. It organizes EuroPython conferences, sponsors initiatives like financial aid programs, and promotes diversity and inclusion in the tech ecosystem.
+    </p>
+  </div>
+  <div class="box box_sponsor" style="width: 343px">
+    <a href="https://python.org/psf/"><img height="130" width="343" src="/images/sponsors/PSF.png" alt="Logo of Python Software Foundation, a supporter of PyCon UK {{ site.con_year }}" title="Python Software Foundation"></a>
+    <p>
+      The Python Software Foundation is an organization devoted to advancing open source technology related to the Python programming language.
+    </p>
+  </div>
+  <div class="box box_sponsor" style="width: 309px">
+    <a href="https://www.djangoproject.com/fundraising/"><img height="130" width="309" src="/images/sponsors/Django.png" alt="Logo of Django Software Foundation, a supporter of PyCon UK {{ site.con_year }}" title="Django Software Foundation"></a>
+    <p>
+      The Django Software Foundation is a non-profit organisation which works to promote, support, and advance the Django Web framework.
+    </p>
+  </div>
+</div>
+
+<div><!-- Fix the footer with the floats --></div>
