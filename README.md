@@ -54,4 +54,3 @@ Blog posts live in `src/_posts`. Each post is a file with a name of the form
 **Note a post with a date in the future will not automatically get deployed
 when the main branch is updated. A manual deployment run will be required on or
 after the post date.**
-
